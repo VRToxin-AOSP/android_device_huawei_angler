@@ -30,7 +30,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a7
 
 # VRToxin build flags
 VRTOXIN_BLOCK_BUILD := false
-TARGET_GCC_VERSION_ARM64 := 4.9-kernel
+TARGET_GCC_VERSION_ARM64 := 5.2-kernel
 STRICT_ALIASING := true
 CLANG_O3 := true
 ENABLE_GCCONLY := true
