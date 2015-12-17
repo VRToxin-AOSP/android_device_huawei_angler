@@ -37,6 +37,7 @@ ENABLE_GCCONLY := true
 GRAPHITE_OPTS := true
 USE_PIPE := false
 POLLY_OPTIMIZATION := true
+ENABLE_SANITIZE := true
 
 ENABLE_CPUSETS := true
 
