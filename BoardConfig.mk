@@ -134,5 +134,5 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/huawei/angler
-TARGET_KERNEL_CONFIG := kylo_defconfig
+TARGET_KERNEL_CONFIG := ak_angler_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
