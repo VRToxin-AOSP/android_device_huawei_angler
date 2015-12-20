@@ -1,8 +1,8 @@
 [
   {
-    "repository": "android_kernel_huawei_angler",
+    "repository": "f100cleveland/AK-Angler",
     "target_path": "kernel/huawei/angler",
-    "revision": "mm-6.0.1"
+    "revision": "ak"
   },
   {
    "repository": "android_vendor_huawei",
