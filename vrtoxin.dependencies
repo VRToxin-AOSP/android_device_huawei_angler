@@ -1,8 +1,9 @@
 [
   {
-    "repository": "f100cleveland/AK-Angler",
+    "remote": "git",
+    "repository": "f100cleveland/saberCore64",
     "target_path": "kernel/huawei/angler",
-    "revision": "ak"
+    "revision": "saberCore"
   },
   {
    "repository": "android_vendor_huawei",
