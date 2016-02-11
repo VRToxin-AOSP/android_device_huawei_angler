@@ -41,6 +41,7 @@ GRAPHITE_OPTS := true
 USE_PIPE := true
 POLLY_OPTIMIZATION := true
 ENABLE_SANITIZE := true
+CORTEX_TUNINGS := true
 
 # System
 export USE_CCACHE := 1
