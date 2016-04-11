@@ -119,6 +119,9 @@ on boot
     chown system system /sys/class/leds/blue/on_off_ms
     chown system system /sys/class/leds/red/rgb_start
 
+    # TapToWake
+    chown system system /sys/devices/soc.0/f9924000.i2c/i2c-2/2-0070/input/input0/wake_gesture
+
 on property:init.svc.per_mgr=running
     start per_proxy
 
@@ -144,9 +147,6 @@ on post-fs-data
 
     # Create /data/time folder for time-services
     mkdir /data/time/ 0700 system system
-
-    # Audio
-    mkdir /data/misc/audio 0770 audio audio
     mkdir /data/audio/ 0770 media audio
 
     # Create folder for perf daemon
@@ -209,17 +209,6 @@ on charger
    write /sys/devices/system/cpu/cpu5/online 0
    write /sys/devices/system/cpu/cpu6/online 0
    write /sys/devices/system/cpu/cpu7/online 0
-
-    write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 18D1
-    write /sys/class/android_usb/android0/idProduct 4EE2
-    write /sys/class/android_usb/android0/bDeviceClass 0
-    write /sys/class/android_usb/android0/bDeviceSubClass 0
-    write /sys/class/android_usb/android0/bDeviceProtocol 0
-    write /sys/class/android_usb/android0/functions mtp,adb
-    write /sys/class/android_usb/android0/enable 1
-    start adbd
-    setprop sys.usb.state mtp,adb
 
 on property:sys.boot_completed=1
      #allow CPUs to go in deeper idle state than C0
