@@ -390,6 +390,12 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
 
+# Enable B service adj transition
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.fw.bservice_enable=true \
+    ro.sys.fw.bservice_limit=5 \
+    ro.sys.fw.bservice_age=5000
+
 # drmservice prop
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
