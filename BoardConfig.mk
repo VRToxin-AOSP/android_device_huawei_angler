@@ -32,7 +32,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53.a57
 
 # VRToxin
 VRTOXIN_BLOCK_BUILD := false
-TARGET_GCC_VERSION_ARM64 := 7.0-kernel
+TARGET_GCC_VERSION_ARM64 := 6.0-kernel
 
 # Optimizations
 STRICT_ALIASING := true
